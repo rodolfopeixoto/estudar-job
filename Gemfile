@@ -17,7 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+# gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -36,9 +36,41 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Others
+# state machine
+gem 'aasm'
+
+# i18n internationalization
+gem 'rails-i18n'
+
+# login and permissions
+gem 'devise'
+gem 'devise-i18n'
+gem 'pundit'
+
+# mailer
+gem 'premailer-rails'
+
+# background jobs
+gem 'sidekiq'
+gem 'foreman'
+
+# manage env vars
+gem 'dotenv-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rubocop'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'
+  gem 'faker'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
@@ -48,8 +80,17 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'i18n-debug'
 end
 
+group :test do
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'rspec-retry'
+  gem 'timecop'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
