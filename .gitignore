@@ -26,4 +26,4 @@
 *.swo
 
 # Database file
-config/database.yml
+database.yml
