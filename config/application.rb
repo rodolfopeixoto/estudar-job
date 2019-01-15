@@ -26,8 +26,16 @@ module Estudar
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.active_job.queue_adapter = :sidekiq
+    config.action_mailer.deliver_later_queue_name = 'mailers'
+    config.autoload_paths += ["#{config.root}/app/interactors/concerns"]
+    config.autoload_paths += ["#{config.root}/app/datas/edools"]
+    config.autoload_paths += ["#{config.root}/lib"]
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Timezone
+    config.time_zone = "Brasilia"
   end
 end
