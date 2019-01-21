@@ -1,24 +1,55 @@
-# README
+![](https://www.estudar.org.br/wp-content/themes/fundacao-estudar-2/images/logo-header.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Bem-vindo à aplicação de teste
 
-Things you may want to cover:
+Estamos muito felizes que você tenha chegado nessa etapa do nosso processo seletivo, para essa fase, desejamos que você conclua o desafio.
 
-* Ruby version
+O objetivo é (...)
 
-* System dependencies
+#### Environment
 
-* Configuration
+Caso queira um passo a passo de instalação de como configurar o seu ambiente, pode consultar o site do [GoRails](https://gorails.com/setup/ubuntu/18.10).
 
-* Database creation
+```
+Rails Version: 5.2.1
+Ruby Version: 2.5.3
+Mysql version: 5.7 or higher
+Redis version: 4.0 or higher
+```
 
-* Database initialization
+#### Setup
 
-* How to run the test suite
+Lembre-se de editar o arquivo `.env` com as informações do seu banco de dados MySQL e do Redis. Conferir também o arquivo de `database.yml`.
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+$ cp config/database.yml.sample config/database.yml
+$ bin/setup
+```
 
-* Deployment instructions
+#### Features
+- Adicionar (...)
+- Usar [Interactors](https://github.com/collectiveidea/interactor)(Blog Post: [Interactors in Ruby — easy as cake, simple as pie](https://goiabada.blog/interactors-in-ruby-easy-as-cake-simple-as-pie-33f66de2eb78)).
+- Utilizar o Organizer do Interactors.
+- Utilizar o Job (...)
+- Integração contínua
 
-* ...
+#### Critérios de avaliação
+
+- Organização do projeto: Avalia a estrutura do projeto, documentação e uso de controle de versão;
+- Coerência: Avalia se os requisitos foram atendidos;
+- Boas práticas: Avalia se o projeto segue boas práticas de desenvolvimento, incluindo segurança e otimização;
+- Controle de Qualidade: Avalia se o projeto possui qualidade assegurada por testes automatizados(Rspec) e integração contínua (por exemplo Circle Ci).
+
+#### Requisitos bônus
+
+Esses requisitos não são obrigatórios, mas serão levados em consideração como pontos extras no momento da avaliação.
+
+1. Adicionar algo caso venha a ter (...)
+
+#### Processo de submissão
+
+O desafio deve ser entregue pelo GitHub. A aplicação deve estar hospedada no Heroku ou AWS. As URLs devem ser enviadas por email.
+
+Qualquer dúvida em relação ao desafio, responderemos por e-mail.
+
+Bom trabalho!
