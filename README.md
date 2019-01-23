@@ -4,7 +4,7 @@
 
 Estamos muito felizes que você tenha chegado nessa etapa do nosso processo seletivo, para essa fase, desejamos que você conclua o desafio.
 
-O objetivo é (...)
+O objetivo é fazer um integração simples com um sistema externo de forma assíncrona
 
 #### Environment
 
@@ -28,10 +28,10 @@ $ bin/setup
 
 #### Features
 - Criar um usuário em um serviço externo
-..- Criar um form com nome e sobrenome
-..- Verificar se o usuário existe no serviço (https://reqres.in/api/users?page=2)
-..- Caso o usuário não exista criá-lo
-..- Usar o serviço de fake api [Req|Res](https://reqres.in/)
+    - Criar um form com nome e sobrenome
+    - Verificar se o usuário existe no serviço (https://reqres.in/api/users?page=2)
+    - Caso o usuário não exista criá-lo
+    - Usar o serviço de fake api [Req|Res](https://reqres.in/)
 - Usar [Interactors](https://github.com/collectiveidea/interactor)(Blog Post: [Interactors in Ruby — easy as cake, simple as pie](https://goiabada.blog/interactors-in-ruby-easy-as-cake-simple-as-pie-33f66de2eb78)).
 - Utilizar o Organizer do Interactors.
 - Todo o processo deve ser assíncrono
