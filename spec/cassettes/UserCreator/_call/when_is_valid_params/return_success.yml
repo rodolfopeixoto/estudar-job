@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://reqres.in/api/users
+    body:
+      encoding: UTF-8
+      string: '{"first_name":"Rodolfo","last_name":"Peixoto","email":"peixoto@gmail.com"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 18 Jan 2020 20:17:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8694ddcf7b69da142ac8be261431a2fc1579378642; expires=Mon, 17-Feb-20
+        20:17:22 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"7c-PWGzu/AudfW3YDgj5c/U1tieG1Y"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 557340826918f1da-GRU
+    body:
+      encoding: UTF-8
+      string: '{"first_name":"Rodolfo","last_name":"Peixoto","email":"peixoto@gmail.com","id":"182","createdAt":"2020-01-18T20:17:22.642Z"}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2020 20:17:22 GMT
+recorded_with: VCR 4.0.0

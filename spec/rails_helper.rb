@@ -9,9 +9,11 @@ require 'database_cleaner'
 require 'faker'
 require 'rspec/rails'
 require 'rspec/retry'
+require 'sidekiq/testing'
 require 'simplecov'
 require 'support/factory_bot'
 require 'vcr'
+Sidekiq::Testing.fake!
 SimpleCov.start
 
 # Add additional requires below this line. Rails is not loaded until this point!

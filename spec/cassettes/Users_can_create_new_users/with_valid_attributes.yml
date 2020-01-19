@@ -1,0 +1,315 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://reqres.in/api/users
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 18 Jan 2020 20:41:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '90'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de5f39e665da869554926efad0084855f1579380071; expires=Mon, 17-Feb-20
+        20:41:11 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"5a-4PC+b7GV35fEpy6s+EMc5hqjuoc"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 557363676c8d4a52-GRU
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create","id":"653","createdAt":"2020-01-18T20:41:11.928Z"}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2020 20:41:12 GMT
+- request:
+    method: post
+    uri: https://reqres.in/api/users
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 18 Jan 2020 20:41:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '89'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d06b7cd8aaf318bbb082978a4f85db0491579380072; expires=Mon, 17-Feb-20
+        20:41:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"59-lkRFEZjgbCgM2fNOi1d2oc4pSi4"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5573636c8f06f768-GRU
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create","id":"45","createdAt":"2020-01-18T20:41:12.730Z"}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2020 20:41:12 GMT
+- request:
+    method: post
+    uri: https://reqres.in/api/users
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 18 Jan 2020 20:41:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '89'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d54bb0f8562b68aa9921a3000f5a7c0141579380073; expires=Mon, 17-Feb-20
+        20:41:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"59-jsB53acP2tJhrvD1uuHA21XPMwc"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 557363716f41f72c-GRU
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create","id":"91","createdAt":"2020-01-18T20:41:13.515Z"}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2020 20:41:13 GMT
+- request:
+    method: post
+    uri: https://reqres.in/api/users
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 18 Jan 2020 20:41:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '90'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db3069bc7558c80675ec1093201ab666b1579380073; expires=Mon, 17-Feb-20
+        20:41:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"5a-DTT+qSKkftScacfF/4x9TTHer5c"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55736375aba6f683-GRU
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create","id":"632","createdAt":"2020-01-18T20:41:14.187Z"}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2020 20:41:14 GMT
+- request:
+    method: post
+    uri: https://reqres.in/api/users
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 18 Jan 2020 20:41:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '90'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d25d93cd4a70aa07ee45b435a098f677b1579380074; expires=Mon, 17-Feb-20
+        20:41:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"5a-HconqGYvNLwl3EfV8ny75gRgL2A"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5573637a5882f6bb-GRU
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create","id":"986","createdAt":"2020-01-18T20:41:14.931Z"}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2020 20:41:15 GMT
+- request:
+    method: post
+    uri: https://reqres.in/api/users
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 18 Jan 2020 20:41:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '90'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d23b014514793e9b99ed0050abb76f3c71579380075; expires=Mon, 17-Feb-20
+        20:41:15 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"5a-kNsac0dXFtp1EgkA32qICMBhoRs"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5573637ee863cfec-GRU
+    body:
+      encoding: UTF-8
+      string: '{"controller":"users","action":"create","id":"948","createdAt":"2020-01-18T20:41:15.662Z"}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2020 20:41:15 GMT
+recorded_with: VCR 4.0.0
