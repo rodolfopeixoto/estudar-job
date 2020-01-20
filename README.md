@@ -31,7 +31,7 @@ $ bin/setup
 Para utilizar o docker siga os passos abaixo:
 
 Configurar o `config/database.yml`, adicionando ao `host` o nome o serviço `db`
-```
+```yml
 default: &default
   adapter: mysql2
   encoding: utf8
@@ -45,33 +45,33 @@ default: &default
 
 Para colocar o servidor online, utilize o comando no Linux e aguarde, será efetuado o download dos layers/images
 
-```
-  docker-compose up --build
+```sh
+  $ docker-compose up --build
 ```
 
 O docker acaba sendo mais lento no Mac, então pode-se utilizar com o comando:
 
-```
-docker-compose -f docker-compose-mac.yml up --build
+```sh
+$ docker-compose -f docker-compose-mac.yml up --build
 ```
 
 Para executar o `rubocop` ou `rspec spec`, você precisa estar com os containers em execução, execute o comando abaixo.
 
-```
-  docker exec -it fundacao-estudar_app_1 sh
+```sh
+  $ docker exec -it fundacao-estudar_app_1 sh
 ```
 O terminal estará disponível para executar os comandos abaixo:
 
 Executar o rubocop
 
 ```
- rubocop -a
+ $ rubocop -a
 ```
 
 Executar os testes
 
 ```
- rspec spec
+ $ rspec spec
 ```
 Quando executamos o rspec, automaticamente o coverage é executado também, então podemos verificar a cobertura de testes, basta acessar a pasta coverage e abrir o html index.html e estará disponível os arquivos que estão cobertos ou não.
 
