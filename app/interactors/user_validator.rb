@@ -16,7 +16,7 @@ class UserValidator
       context.fail!(message: 'There is already a registered user')
     else
       context.success?
-    end 
+    end
   end
 
   def invalid?
@@ -53,7 +53,7 @@ class UserValidator
   def first_name_eql?(user)
     user['first_name'].parameterize.eql? first_name.parameterize
   end
-  
+
   def last_name_eql?(user)
     user['last_name'].parameterize.eql? last_name.parameterize
   end

@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe ReqResClient, :vcr do
   let!(:params) do
-    { 
-      "email"=>"rodolfog.peixot@example.com",
-      "first_name"=>"Rodolfo",
-      "last_name"=>"Peixoto"
+    {
+      'email' => 'rodolfog.peixot@example.com',
+      'first_name' => 'Rodolfo',
+      'last_name' => 'Peixoto'
     }
   end
   describe '#create' do

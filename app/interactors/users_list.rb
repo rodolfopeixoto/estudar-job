@@ -1,8 +1,7 @@
 class UsersList
-
   include Interactor
 
-  CURRENT_PAGE = '1'
+  CURRENT_PAGE = '1'.freeze
 
   UserList = Logger.new(Rails.root.join('log', 'user_list.log'))
   UserList.datetime_format = '%Y-%m-%d %H:%M:%S'

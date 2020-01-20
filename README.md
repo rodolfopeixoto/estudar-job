@@ -95,6 +95,8 @@ A ideia era criar um sistema de notificação, onde o usuário pudesse consultar
 
 O sistema poderá ser visualizado no Heroku [Estudar](http://user-reqres.herokuapp.com)
 
+Sidekiq [Estudar-Sidekiq](https://user-reqres.herokuapp.com/sidekiq)
+
 
 #### Features
 - Criar um usuário em um serviço externo

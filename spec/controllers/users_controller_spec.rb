@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
   let!(:params_user) do
-    { 
-      "email"=>"rodolfog.peixot@example.com",
-      "first_name"=>"Rodolfo",
-      "last_name"=>"Peixoto"
+    {
+      'email' => 'rodolfog.peixot@example.com',
+      'first_name' => 'Rodolfo',
+      'last_name' => 'Peixoto'
     }
   end
   describe 'POST #create', :vcr do
@@ -18,4 +18,3 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 end
-

@@ -2,7 +2,6 @@ require 'faraday'
 require 'json'
 
 class ConnectionApi < BaseApplicationLib
-
   attr_reader :url
 
   def initialize(url)
@@ -12,9 +11,9 @@ class ConnectionApi < BaseApplicationLib
   def call
     connect
   end
-  
+
   private
-  
+
   def connect
     Faraday.new(url) do |faraday|
       faraday.response :logger

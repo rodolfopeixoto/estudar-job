@@ -1,10 +1,10 @@
 require 'rails_helper'
 RSpec.describe PlaceUserCreator do
   let!(:params_user) do
-    { 
-      email: "rodolfog.peixot@example.com",
-      first_name: "Rodolfo",
-      last_name: "Peixoto"
+    {
+      email: 'rodolfog.peixot@example.com',
+      first_name: 'Rodolfo',
+      last_name: 'Peixoto'
     }
   end
   describe '.call', :vcr do
