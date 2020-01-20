@@ -17,6 +17,8 @@ Mysql version: 5.7 or higher
 Redis version: 4.0 or higher
 ```
 
+ou caso queira utilizar o docker, o projeto suporta, basta instalar o Docker e o Docker Compose, pode consultar o site do [Docker](https://docs.docker.com/compose/install/)
+
 #### Setup
 
 Lembre-se de editar o arquivo `.env` com as informações do seu banco de dados MySQL e do Redis. Conferir também o arquivo de `database.yml`.
@@ -25,6 +27,65 @@ Lembre-se de editar o arquivo `.env` com as informações do seu banco de dados 
 $ cp config/database.yml.sample config/database.yml
 $ bin/setup
 ```
+
+Para utilizar o docker siga os passos abaixo:
+
+Configurar o `config/database.yml`, adicionando ao `host` o nome o serviço `db`
+```
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("DB_POOL") || 5 %>
+  username: root
+  password: rails
+  protocol: tcp
+  host: db
+  reconnect: true
+```
+
+Para colocar o servidor online, utilize o comando no Linux e aguarde, será efetuado o download dos layers/images
+
+```
+  docker-compose up --build
+```
+
+O docker acaba sendo mais lento no Mac, então pode-se utilizar com o comando:
+
+```
+docker-compose -f docker-compose-mac.yml up --build
+```
+
+Para executar o `rubocop` ou `rspec spec`, você precisa estar com os containers em execução, execute o comando abaixo.
+
+```
+  docker exec -it fundacao-estudar_app_1 sh
+```
+O terminal estará disponível para executar os comandos abaixo:
+
+Executar o rubocop
+
+```
+ rubocop -a
+```
+
+Executar os testes
+
+```
+ rspec spec
+```
+Quando executamos o rspec, automaticamente o coverage é executado também, então podemos verificar a cobertura de testes, basta acessar a pasta coverage e abrir o html index.html e estará disponível os arquivos que estão cobertos ou não.
+
+Para acessar o sidekiq e verificar o erro, caso o usuário seja igual os cadastrados na API, basta acessar:
+
+
+[![Image from Gyazo](https://i.gyazo.com/c1774573f42d1851905d8bd6ca8b319e.gif)](https://gyazo.com/c1774573f42d1851905d8bd6ca8b319e)
+
+
+```
+localhost:3000/sidekiq
+```
+
+A ideia era criar um sistema de notificação, onde o usuário pudesse consultar, quais registros foram processando e quais não foram, porém com o tempo não foi possível.
 
 #### Features
 - Criar um usuário em um serviço externo
