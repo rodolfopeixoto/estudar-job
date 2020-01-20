@@ -87,6 +87,11 @@ localhost:3000/sidekiq
 
 A ideia era criar um sistema de notificação, onde o usuário pudesse consultar, quais registros foram processando e quais não foram, porém com o tempo não foi possível.
 
+#### Melhorias
+ - Refactory no TDD
+ - Adicionar i18n em todo o fluxo
+ - Adicionar um painel para visualização de todos os processos
+
 #### Features
 - Criar um usuário em um serviço externo
     - Criar um form com nome e sobrenome
