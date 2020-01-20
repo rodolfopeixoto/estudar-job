@@ -92,6 +92,10 @@ A ideia era criar um sistema de notificação, onde o usuário pudesse consultar
  - Adicionar i18n em todo o fluxo
  - Adicionar um painel para visualização de todos os processos
 
+
+O sistema poderá ser visualizado no Heroku [Estudar](http://user-reqres.herokuapp.com)
+
+
 #### Features
 - Criar um usuário em um serviço externo
     - Criar um form com nome e sobrenome
