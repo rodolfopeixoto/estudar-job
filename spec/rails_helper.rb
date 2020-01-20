@@ -13,6 +13,8 @@ require 'sidekiq/testing'
 require 'simplecov'
 require 'support/factory_bot'
 require 'vcr'
+rails_support_path = Rails.root.join('spec', 'support', '**', '*.rb')
+Dir[rails_support_path].each { |file| require file }
 Sidekiq::Testing.fake!
 SimpleCov.start
 

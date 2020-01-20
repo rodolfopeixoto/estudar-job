@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
-  resources :users, only: %i(new create)
-  root 'users#new'
+  resources :users, only: %i(index new create)
+  root 'users#index'
 end

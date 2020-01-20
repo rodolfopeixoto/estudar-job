@@ -2,12 +2,10 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
   let!(:params_user) do
-    {
-      params: {
-        first_name: 'Rodolfo',
-        last_name: 'Peixoto',
-        email: 'peixoto@gmail.com'
-      }
+    { 
+      "email"=>"rodolfog.peixot@example.com",
+      "first_name"=>"Rodolfo",
+      "last_name"=>"Peixoto"
     }
   end
   describe 'POST #create', :vcr do
@@ -15,7 +13,7 @@ RSpec.describe UsersController, type: :controller do
       it 'return status code 201' do
         post :create, params: params_user
 
-        expect(response.status).to eq(200)
+        expect(response.status).to eq(302)
       end
     end
   end

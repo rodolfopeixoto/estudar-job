@@ -1,10 +1,19 @@
 class UsersController < ApplicationController
-  def new
+
+  def index
+    @users = UsersList.call.get
   end
+
+  def new;end
+
   def create
-    user_creator = UserCreator.call(params: params)
-    return unless user_creator
+    UserWorker.perform_async(
+      {
+        first_name: params[:first_name],
+        last_name: params[:last_name],
+        email: params[:email]
+      })
     flash[:notice] = 'In the process of creating the user'
-    render :new
+    redirect_to root_path
   end
 end
