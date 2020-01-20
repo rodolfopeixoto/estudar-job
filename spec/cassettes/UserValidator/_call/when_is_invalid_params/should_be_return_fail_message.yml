@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 20 Jan 2020 00:12:07 GMT
+      - Mon, 20 Jan 2020 00:35:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,8 +29,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d750deb8bdec6387a87ef829175e6f3051579479127; expires=Wed, 19-Feb-20
-        00:12:07 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=d30b35dc1b21bed0e1f41173f4b40d1151579480518; expires=Wed, 19-Feb-20
+        00:35:18 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
       X-Powered-By:
       - Express
       Access-Control-Allow-Origin:
@@ -44,7 +44,7 @@ http_interactions:
       Cf-Cache-Status:
       - HIT
       Age:
-      - '1278'
+      - '2669'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Vary:
@@ -52,15 +52,15 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 557cd5c5de60f5e3-GRU
+      - 557cf7b9f9c4f6bf-GRU
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"}]}'
     http_version: 
-  recorded_at: Mon, 20 Jan 2020 00:12:08 GMT
+  recorded_at: Mon, 20 Jan 2020 00:35:18 GMT
 - request:
     method: get
-    uri: https://reqres.in/api/users?page=1
+    uri: https://reqres.in/api/users?page=2
     body:
       encoding: US-ASCII
       string: ''
@@ -79,7 +79,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 20 Jan 2020 00:12:09 GMT
+      - Mon, 20 Jan 2020 00:35:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -87,14 +87,14 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dcecb45eedd3a4b91d7ec7b35116b14c01579479129; expires=Wed, 19-Feb-20
-        00:12:09 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=d741c6d34f6b8b4bef46f053ae62e8f231579480518; expires=Wed, 19-Feb-20
+        00:35:18 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
       X-Powered-By:
       - Express
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"3fc-L9Y9qPKbIuBn8jgEBvFsXcYiYX0"
+      - W/"414-k36Lu9tCb0XMJeh2/UG19C4xbw4"
       Via:
       - 1.1 vegur
       Cache-Control:
@@ -102,7 +102,7 @@ http_interactions:
       Cf-Cache-Status:
       - HIT
       Age:
-      - '1280'
+      - '2668'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Vary:
@@ -110,10 +110,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 557cd5ce38efd04c-GRU
+      - 557cf7bafadaf617-GRU
     body:
       encoding: ASCII-8BIT
-      string: '{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"}]}'
+      string: '{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}]}'
     http_version: 
-  recorded_at: Mon, 20 Jan 2020 00:12:09 GMT
+  recorded_at: Mon, 20 Jan 2020 00:35:18 GMT
 recorded_with: VCR 4.0.0

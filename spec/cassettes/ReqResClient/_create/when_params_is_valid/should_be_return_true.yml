@@ -5,7 +5,7 @@ http_interactions:
     uri: https://reqres.in/api/users
     body:
       encoding: UTF-8
-      string: '{"params":{"first_name":"Rodolfo","last_name":"Peixoto","email":"rodolfo@gmail.com"}}'
+      string: '{"email":"rodolfog.peixot@example.com","first_name":"Rodolfo","last_name":"Peixoto"}'
     headers:
       Content-Type:
       - application/json
@@ -21,22 +21,22 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sun, 19 Jan 2020 05:37:36 GMT
+      - Mon, 20 Jan 2020 00:11:54 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '135'
+      - '134'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d364621136034f69ab139029bdf7519211579412255; expires=Tue, 18-Feb-20
-        05:37:35 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=d33a26ecc64b5fee5e1c52090cf03bd3f1579479113; expires=Wed, 19-Feb-20
+        00:11:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
       X-Powered-By:
       - Express
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"87-VWR1ZppfmEDMUbQ5EqPxI3TMfEc"
+      - W/"86-4OkXM8sSQpXkX1mpIaFemSI4zK0"
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
@@ -46,10 +46,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 55767526bd54f64b-GRU
+      - 557cd56bfdfff5f7-GRU
     body:
       encoding: UTF-8
-      string: '{"params":{"first_name":"Rodolfo","last_name":"Peixoto","email":"rodolfo@gmail.com"},"id":"300","createdAt":"2020-01-19T05:37:36.139Z"}'
+      string: '{"email":"rodolfog.peixot@example.com","first_name":"Rodolfo","last_name":"Peixoto","id":"300","createdAt":"2020-01-20T00:11:53.939Z"}'
     http_version: 
-  recorded_at: Sun, 19 Jan 2020 05:37:36 GMT
+  recorded_at: Mon, 20 Jan 2020 00:11:54 GMT
 recorded_with: VCR 4.0.0

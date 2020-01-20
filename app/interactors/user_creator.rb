@@ -2,11 +2,14 @@ class UserCreator
   include Interactor
 
   def call
-    params = context.params
-    first_name = params[:first_name]
-    last_name = params[:last_name]
-    return false if first_name.blank? || last_name.blank?
-    UserWorker.perform_async(params)
-    true
+    client = ReqResClient.new
+    client.create(
+      {
+        first_name: context.first_name,
+        last_name: context.last_name,
+        email: context.email
+      }
+    )
+    context.success?
   end
 end
