@@ -2,12 +2,10 @@ require 'rails_helper'
 
 RSpec.describe UserWorker do
   let!(:params) do
-    {
-      params: {
-        first_name: 'Rodolfo',
-        last_name: 'Peixoto',
-        email: 'rodolfo@gmail.com'
-      }
+    { 
+      email: "rodolfog.peixot@example.com",
+      first_name: "Rodolfo",
+      last_name: "Peixoto"
     }
   end
   describe '#perform', :vcr do
@@ -17,14 +15,12 @@ RSpec.describe UserWorker do
           described_class.jobs.size }.by(1)
       end
 
-      it 'should be return true' do
-        req_res_client = instance_double(ReqResClient)
-        allow(ReqResClient).to receive(:new).and_return(req_res_client)
-        allow(req_res_client).to receive(:create)
-
+      it 'should be execute' do
+        interactor = instance_double(Interactor::Context)
+        allow(PlaceUserCreator).to receive(:call).with(params).and_return(interactor)
+        allow(interactor).to receive(:success?).and_return(true)
         UserWorker.new.perform(params)
-        expect(ReqResClient).to have_received(:new)
-        expect(req_res_client).to have_received(:create)
+        expect(PlaceUserCreator).to have_received(:call)
       end
     end
   end

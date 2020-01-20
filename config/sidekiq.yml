@@ -1,0 +1,12 @@
+:verbose: false
+
+:timeout: 8
+
+:queues:
+  - user
+
+:limits:
+  user: 1
+production:
+  :concurrency: 5
+  
