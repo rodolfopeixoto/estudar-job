@@ -64,7 +64,7 @@ gem 'faraday'
 gem 'interactor', '~> 3.0'
 
 # framework front-end
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
 group :development, :test do
